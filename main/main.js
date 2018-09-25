@@ -21,11 +21,12 @@ class Sequence {
   length(){
 	  return sequence.length;
   }
-  sum(x,y){
-	  return x+y;
-  }
 	  
   average(){
+	  var sum = 0;
+	  for(var i=0;i<sequence.length;i++){
+		  sum += sequence[i];
+	  }
       return sequence.reduce(sum)/sequence.length;
   }	  
   // Write your code here
